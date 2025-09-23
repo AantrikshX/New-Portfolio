@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Removed invalid @custom-variant rule */
+
+/* Moved CSS variables from @theme inline to :root for compatibility */
+.welcome{
+    height: 650px;
+}
+.Aantriksh{
+    font-family: "Oswald";
+    /* background: linear-gradient(90deg, #4CC9F0, #9D4EDD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; */
+    font-weight: 700;
+}
+.MERN{
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+.name{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.roboto{
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.heavy{
+    font-weight: 900;
+}
+.custom-class{
+    font-size: 50px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+
+/* globals.css or your main CSS file */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
