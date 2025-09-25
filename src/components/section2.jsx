@@ -26,7 +26,7 @@ const section2 = () => {
                                       >
                   SKILLS
               </ScrollFloat></div>
-      <div className='absolute flex flex-wrap gap-2 top-30 left-3.5  ' >
+      <div className='absolute flex flex-wrap justify-around top-30  ' id='skills' >
         <Skillcard 
         image="/htmlogo.png"
         head ="HTML" 
@@ -118,7 +118,7 @@ const section2 = () => {
         hoverText="group-hover:text-cyan-400 group-active:text-cyan-400"
         bgColor="bg-[#01020E]"
         imgprop='scale-120 translate-y-2.5 group-hover:scale-125 group-active:scale-125'/> 
-
+          <div id='skills2' ></div>
         <Skillcard
         image='/nodelogo.png'
         head='Node JS'

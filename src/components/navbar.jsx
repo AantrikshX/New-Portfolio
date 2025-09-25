@@ -8,8 +8,8 @@ const Nav = () => {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "FrontEnd", ariaLabel: "About Company" },
-        { label: "BackEnd", ariaLabel: "About Careers" }
+        { label: "FrontEnd" , href:"#skills" },
+        { label: "BackEnd" ,href:"#skills2" }
       ]
     },
     {
@@ -17,8 +17,8 @@ const Nav = () => {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Redesigns", ariaLabel: "Featured Projects" },
-        { label: "Full Stack", ariaLabel: "Project Case Studies" }
+        { label: "Redesigns", href:'#Projects' },
+        { label: "Full Stack",  href:'#Projects' }
       ]
     },
     {
@@ -26,9 +26,9 @@ const Nav = () => {
       bgColor: "#271E37", 
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" }
+        { label: "Chat with Us", ariaLabel: "chat us" ,href:'#chat'},
+        { label: "X", ariaLabel: "Twitter" , href:'https://x.com/aantriksh_' },
+        { label: "LinkedIn", ariaLabel: "LinkedIn" , href:'https://www.linkedin.com/in/aantriksh-sharma-6807b22a5/' }
       ]
     }
   ];

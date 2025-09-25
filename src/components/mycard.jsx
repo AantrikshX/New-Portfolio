@@ -4,11 +4,11 @@ import PixelCard from './PixelCard';
 const mycard = () => {
   return (
     <>
-    <div className=' flex relative mr-5 w-full justify-center mt-3' >
+    <div className=' flex relative  w-full justify-center mt-3' >
         
 
         
-                <div className='  w-80 h-60 rounded-xl bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-950 shadow-xl/50 ' >
+                <div  className='  w-80 h-60 rounded-xl bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-950 shadow-xl/50 ' >
                     <PixelCard variant="default">
                         <div className=' absolute right-5 w-25 h-40 top-5  rounded-2xl' ><img src="/mymodelfinal.png" className='translate-y-2 translate-x-1 scale-110 z-10' alt="model" /></div>
                         <div className='absolute right-7 top-48 rounded-4xl w-20 h-8 border border-zinc-500' >

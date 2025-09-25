@@ -6,7 +6,7 @@ const section3 = () => {
   return (
     <>
     <div className='bg-gradient-to-b relative select-none from-black to-zinc-800 w-full h-200' >
-      <div className='text-white absolute left-6 top-10 ' >
+      <div id='Projects'  className='text-white absolute left-6 top-10 ' >
         <ShinyText 
                 text="PROJECTS" 
                 disabled={false} 

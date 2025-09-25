@@ -7,6 +7,10 @@
 .welcome{
     height: 650px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .Aantriksh{
     font-family: "Oswald";
     /* background: linear-gradient(90deg, #4CC9F0, #9D4EDD);
@@ -46,4 +50,9 @@
 .no-scrollbar {
   -ms-overflow-style: none;  /* IE, Edge */
   scrollbar-width: none;     /* Firefox */
+}
+
+
+.section4{
+     font-family: 'Josefin Sans';
 }

@@ -1,46 +1,4 @@
-// import React from 'react'
 
-// const Skillcard = ({
-//   head,
-//   about,
-//   borderColor = "border-zinc-500",
-//   textColor = "text-zinc-500",
-//   bgColor = "bg-[#17194E]",
-//   hoverBorder,
-//   hoverText ,
-//   shadowColor 
-// }) => {
-//   return (
-//     <div>
-//       <div
-//         className={`
-//           relative card border-2 rounded-xl w-40 h-58
-//           ${borderColor} ${textColor} ${hoverBorder} ${hoverText} ${shadowColor}
-//         `}
-//       >
-//         {/* Top small box */}
-//         <div
-//           className={`
-//             absolute ${bgColor} top-[-25px] left-1/2 -translate-x-1/2 border-1 w-12 h-14 rounded-4xl
-//             ${borderColor} ${textColor} ${hoverBorder} ${hoverText} ${shadowColor}
-//           `}
-//         ></div>
-
-//         {/* Title */}
-//         <div className="absolute top-10 left-1/2 -translate-x-1/2">
-//           <h1 className="select-none">{head}</h1>
-//         </div>
-
-//         {/* About */}
-//         <div className="absolute top-17 left-1 text-center">
-//           <p className="select-none text-sm">{about}</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Skillcard;
 
 const Skillcard = ({
   head,
@@ -58,11 +16,11 @@ const Skillcard = ({
   shadowColor 
 }) => {
   return (
-    <div className="group" >
+    <div className="group select-none" >
       {/* parent has group */}
       <div
         className={`
-          relative card mt-6 border-2 rounded-xl w-40 h-70 
+          relative card mt-9 border-2 rounded-xl w-40  h-70 
           ${borderColor} ${textColor} ${hoverBorder} ${hoverText} ${shadowColor}
         `}
       >
