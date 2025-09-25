@@ -18,7 +18,7 @@ const mycard = () => {
                         <div className='name absolute top-5 left-5 text-zinc-300 text-3xl ' > Aantriksh </div>
                         <div className='fullstack text-zinc-400 absolute text-xs top-14 left-8' >Full Stack Developer</div>
                         <div className='absolute roboto w-30 h-10 bg-zinc-500 text-zinc-300 flex items-center rounded-2xl justify-center left-5 bottom-10 ' >
-                            <a className='flex justify-center items-center' href="https://t.me/MaalikXX"><div>CONTACT</div>
+                            <a className='flex justify-center items-center' href="https://t.me/JSONbhai"><div>CONTACT</div>
                             <div className=' heavy text-2xl mb-1' >↗</div></a>
                         </div>
                     </PixelCard>
