@@ -5,18 +5,29 @@
 }
 
 .pixel-card {
-  height: 240px;
-  width: 320px;
+  width: 100%;          /* fills parent width */
+  max-width: 320px;     /* prevents overstretching on small screens */
+  aspect-ratio: 4 / 5;  /* maintains proportion */
+  height: 240px;         /* height adjusts automatically */
   position: relative;
   overflow: hidden;
   display: grid;
   place-items: center;
-  aspect-ratio: 4 / 5;
   border: 1px solid #27272a;
   border-radius: 12px;
   isolation: isolate;
   transition: border-color 200ms cubic-bezier(0.5, 1, 0.89, 1);
   user-select: none;
+}
+
+/* Desktop override */
+@media (min-width: 1024px) {
+  .pixel-card {
+    width: 100%;        /* scale to container */
+    max-width: 600px;   /* adjust as needed */
+    height: 280px;
+    aspect-ratio: 4 / 5;
+  }
 }
 
 .pixel-card::before {

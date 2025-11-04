@@ -6,7 +6,7 @@ import ScrollFloat from './ScrollFloat';
 const section2 = () => {
   return (
     <>
-    <div className='bg-gradient-to-b from-[#14225f] relative to-black  w-full h-500' >
+    <div className='bg-gradient-to-b from-[#14225f] relative to-black lg:h-410 w-full h-500' >
       <Particles
               particleColors={['#ffffff', '#ffffff']}
               particleCount={2500}
@@ -26,13 +26,13 @@ const section2 = () => {
                                       >
                   SKILLS
               </ScrollFloat></div>
-      <div className='absolute flex flex-wrap justify-around top-30  ' id='skills' >
+      <div className='absolute flex  flex-wrap justify-around top-30 lg:top-70 lg:justify-between ' id='skills' >
         <Skillcard 
         image="/htmlogo.png"
         head ="HTML" 
         about="Proficient in writing clean and accessible HTML to build well-structured web pages and ensure strong foundations for responsive."
         progress='100%'
-        progw='w-22'
+        progw='w-22 lg:w-[180.5px] '
         progwbg='group-hover:bg-orange-500 group-active:bg-orange-500'
         hoverBorder = "group-hover:border-orange-500 group-active:border-orange-500"
         shadowColor = "group-hover:shadow-[0_0_25px_5px_rgba(249,115,22,0.8),inset_0_0_15px_rgba(249,115,22,0.8)] group-active:shadow-[0_0_25px_5px_rgba(249,115,22,0.8),inset_0_0_15px_rgba(249,115,22,0.8)]"
@@ -45,7 +45,7 @@ const section2 = () => {
         image='/csslogo.png'
         head="CSS"
         progress='100%'
-        progw='w-22'
+        progw='w-22 lg:w-[180.5px] '
         progwbg="group-hover:bg-sky-500 group-active:bg-sky-500"
         about="Skilled in modern CSS, creating responsive layouts with Flexbox and Grid, using animations and clean, maintainable styling"
         hoverBorder="group-hover:border-sky-500 group-active:border-sky-500"
@@ -58,7 +58,7 @@ const section2 = () => {
         image='/jslogo.png'
         head="JavaScript"
         progress='80%'
-        progw='w-20'
+        progw='w-20 lg:w-[164.5px]'
         progwbg="group-hover:bg-yellow-500 group-active:bg-yellow-500"
         about="Skilled in JavaScript, creating dynamic and interactive web applications, event handling, and optimized performance across browsers"
         hoverBorder="group-hover:border-yellow-500 group-active:border-yellow-500"
@@ -71,7 +71,7 @@ const section2 = () => {
         image='/gitlogo.png'
         head="GIT/GITHUB"
         progress='100%'
-        progw='w-22'
+        progw='w-22 lg:w-[180.5px]'
         progwbg="group-hover:bg-orange-800 group-active:bg-orange-800"
         about="Experienced with Git and GitHub for collaborating through branches, pull requests, and ensuring smooth teamwork in modern development workflows"
         hoverBorder="group-hover:border-orange-800 group-active:border-orange-800"
@@ -85,7 +85,7 @@ const section2 = () => {
         image ='/tailwindlogo.png'
         head="Tailwind"
         progress='90%'
-        progw='w-21'
+        progw='w-21 lg:w-[172px]'
         progwbg="group-hover:bg-teal-400 group-active:bg-teal-400"
         about="Skilled in Tailwind CSS, building responsive and modern user interfaces, utility-first styling, and creating consistent, scalable designs with minimal code"
         hoverBorder='group-hover:border-teal-400 group-active:border-teal-400'
@@ -98,7 +98,7 @@ const section2 = () => {
         image='/tslogo.png'
         head='Typescript'
         progress='30%'
-        progw='w-7'
+        progw='w-7 lg:w-[58px]'
         progwbg="group-hover:bg-blue-500 group-active:bg-blue-500"
         about=' Can use Typescript to develop scalable applications, ensuring type safety, and enhancing code with strong typing and modern features'
         hoverBorder='group-hover:border-blue-500 group-active:border-blue-500'
@@ -106,11 +106,12 @@ const section2 = () => {
         hoverText="group-hover:text-blue-500 group-active:text-blue-500"
         bgColor="bg-[#02051D]"
         imgprop='scale-65 translate-y-1 group-hover:scale-70 group-active:scale-70'/>
+
         <Skillcard
         image='/reactlogo.png'
         head='React'
         progress='70%'
-        progw='w-17'
+        progw='w-17 lg:w-[140px]'
         progwbg="group-hover:bg-cyan-400 group-active:bg-cyan-400"
         about='Strong foundation in React, building reusable components, managing state efficiently, and creating fast, scalable, and interactive single-page applications'
         hoverBorder='group-hover:border-cyan-400 group-active:border-cyan-400'
@@ -118,12 +119,13 @@ const section2 = () => {
         hoverText="group-hover:text-cyan-400 group-active:text-cyan-400"
         bgColor="bg-[#01020E]"
         imgprop='scale-120 translate-y-2.5 group-hover:scale-125 group-active:scale-125'/> 
-          <div id='skills2' ></div>
+          {/* <div id='skills2 w-0 h-0' ></div> */}
         <Skillcard
+        id='skills2'
         image='/nodelogo.png'
         head='Node JS'
         progress='60%'
-        progw='w-16'
+        progw='w-16 lg:w-[130px]'
         progwbg="group-hover:bg-green-600 group-active:bg-green-600"
         about='Proficient in Node.js, building scalable server-side applications, handling APIs, managing databases, and optimizing backend performance efficiently'
         hoverBorder='group-hover:border-green-600 group-active:border-green-600'
@@ -135,8 +137,8 @@ const section2 = () => {
         <Skillcard
         image='/mongologo.png'
         head='Mongo DB'
-        progress='50%'
-        progw='w-12'
+        progress='50% '
+        progw='w-12 lg:w-[91px]'
         progwbg="group-hover:bg-green-500 group-active:bg-green-500"
         about='Adept at MongoDB, designing flexible NoSQL databases, managing collections efficiently, ensuring data integrity, and optimizing query performance'
         hoverBorder='group-hover:border-green-500 group-active:border-green-500'
@@ -149,7 +151,7 @@ const section2 = () => {
         image='/expresslogo.png'
         head='Express'
         progress='50%'
-        progw='w-12'
+        progw='w-12 lg:w-[91px]'
         progwbg="group-hover:bg-white group-active:bg-white"
         about='Experienced in Express.js, building fast and scalable backend APIs, managing routing, middleware, and optimizing server performance efficiently'
         hoverBorder='group-hover:border-white group-active:border-white'

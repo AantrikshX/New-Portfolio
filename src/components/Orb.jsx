@@ -171,7 +171,6 @@ export default function Orb({ hue = 0, hoverIntensity = 1, rotateOnHover = true,
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);
     container.appendChild(gl.canvas);
-
     const geometry = new Triangle(gl);
     const program = new Program(gl, {
       vertex: vert,
@@ -187,10 +186,8 @@ export default function Orb({ hue = 0, hoverIntensity = 1, rotateOnHover = true,
         hoverIntensity: { value: hoverIntensity }
       }
     });
-
     const mesh = new Mesh(gl, { geometry, program });
-
-    function resize() {
+     function resize() {
       if (!container) return;
       const dpr = window.devicePixelRatio || 1;
       const width = container.clientWidth;
@@ -202,12 +199,10 @@ export default function Orb({ hue = 0, hoverIntensity = 1, rotateOnHover = true,
     }
     window.addEventListener('resize', resize);
     resize();
-
     let targetHover = 0;
     let lastTime = 0;
     let currentRot = 0;
     const rotationSpeed = 0.3;
-
     const handleMouseMove = e => {
       const rect = container.getBoundingClientRect();
       const x = e.clientX - rect.left;

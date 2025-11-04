@@ -41,7 +41,7 @@ Here's my message for you: ${msg} 💬
     <div id='chat' className='w-full flex flex-wrap text-white relative h-120 flex-col bg-gradient-to-b from-zinc-800 to-black section4'>
       <div className='left self-start'>
         <h1 className='text-zinc-300 ml-3 font-thin text-2xl'>Have Something in Mind?</h1>
-        <div className=''>
+        <div className=' lg:mt-25'>
           <Stepper
             initialStep={1}
             onStepChange={(step) => console.log('Step:', step)}
